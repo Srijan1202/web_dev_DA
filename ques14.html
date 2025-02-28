@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ccc;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .image-container {
+            position: relative;
+        }
+        .image-container img {
+            width: 600px;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: red;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="image-container">
+            <img src="image.png" alt="Second Image">
+            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
+        </div>
+        <div class="image-container">
+            <img src="second-image.jpg" alt="Second Image">
+            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
+        </div>
+        <div class="image-container">
+            <img src="second-image.jpg" alt="Second Image">
+            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
+        </div>
+        <div class="image-container">
+            <img src="second-image.jpg" alt="Second Image">
+            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
+        </div>
+    </div>
+</body>
+</html>
