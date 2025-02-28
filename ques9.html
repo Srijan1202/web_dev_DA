@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            background: white;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .content {
+            flex: 3;
+            padding: 30px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin: 20px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background: #34495e;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background: #1abc9c;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#personal-data">Personal Data</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Professional Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Curriculum Vitae</h1>
+            <p>Welcome to my CV!</p>
+            <section id="personal-data">
+                <h2>Personal Data</h2>
+                <p><strong>Name:</strong> Azamat</p>
+                <p><strong>Surname:</strong> Azamat</p>
+                <p><strong>Date of birth:</strong> 30.07.74</p>
+                <p><strong>Place of birth:</strong> Bishkek, Kyrgyzstan</p>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Degree:</strong> Bachelor of Science in Computer Science</p>
+                <p><strong>University:</strong> XYZ University</p>
+                <p><strong>Year:</strong> 1995 - 1999</p>
+            </section>
+            <section id="experience">
+                <h2>Professional Experience</h2>
+                <p><strong>Company:</strong> ABC Tech Solutions</p>
+                <p><strong>Role:</strong> Senior Software Engineer</p>
+                <p><strong>Years:</strong> 2005 - Present</p>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                <p>Web Development, JavaScript, HTML, CSS, React, Node.js</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><strong>Email:</strong> azamat@example.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/azamat" target="_blank">linkedin.com/in/azamat</a></p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

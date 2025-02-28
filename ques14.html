@@ -3,56 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
+    <title>Stacked Image</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
-            background-color: #ccc;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 10px;
+            background-color: #f0f0f0;
         }
         .image-container {
             position: relative;
+            width: 400px;
+            height: 300px;
         }
         .image-container img {
-            width: 600px;
-        }
-        .overlay-text {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             position: absolute;
-            top: 10px;
-            left: 10px;
-            color: red;
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 5px;
+            top: 0;
+            left: 0;
+        }
+        .image-container .overlay {
+            opacity: 0.7; 
+            transform: translate(5px, 5px); 
+        }
+        .maincontainer {
+            /* position: relative; */
+            width: 400px;
+            height: 300px;
+            display: flex;
+            gap: 10vw;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="maincontainer">
+        <img src="image.png" alt="Cake Image">
+        <img src="image.png" alt="Overlay Image" class="overlay">
         <div class="image-container">
-            <img src="image.png" alt="Second Image">
-            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
-        </div>
-        <div class="image-container">
-            <img src="second-image.jpg" alt="Second Image">
-            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
-        </div>
-        <div class="image-container">
-            <img src="second-image.jpg" alt="Second Image">
-            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
-        </div>
-        <div class="image-container">
-            <img src="second-image.jpg" alt="Second Image">
-            <div class="overlay-text">Baking Memories, One Slice at a Time. Where Every Bite is a Sweet Delight. Cakes that Make Life Sweeter.</div>
+            <img src="image.png" alt="Cake Image">
+            <img src="image.png" alt="Overlay Image" class="overlay">
         </div>
     </div>
+    
 </body>
 </html>
