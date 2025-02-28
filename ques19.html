@@ -5,76 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            text-align: center;
+            background-color: #e6e6e6;
+            margin: 0;
             padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
+        
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
         h1 {
+            margin: 0;
             font-size: 32px;
             font-weight: bold;
         }
-        h1 span {
-            font-size: 36px;
+        
+        .section {
+            padding: 15px 20px;
+            background-color: #e6f2ff;
+            border-bottom: 1px solid white;
         }
-        .container {
-            width: 60%;
-            margin: auto;
+        
+        .button-section {
+            padding: 15px 20px;
+            background-color: #e6f2ff;
+            display: flex;
+            justify-content: center;
+        }
+        
+        button {
             background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            border: 2px solid black;
-            
-        }
-        .box {
-            background-color: #d6eaf8;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .text-box {
-            background-color: #d6eaf8;
-            padding: 15px;
-            font-size: 16px;
-            text-align: left;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .btn {
-            background-color: white;
-            border: 1px solid black;
-            padding: 10px 20px;
+            border: none;
+            padding: 10px 30px;
             font-size: 16px;
             cursor: pointer;
-            border-radius: 5px;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- <div class="parent"> -->
-
-
-
     <div class="container">
-        <h1>My Blog <span>😊</span></h1>
-        <div class="box">My name is <b>(ADD YOUR NAME HERE)</b></div>
-        <div class="text-box">
-            People ask me all the time — why do you like coding? Isn’t it really hard? 
-            Isn’t the work boring? Do you still have a social life?
+        <div class="header">
+            <h1>My Blog&#128522;</h1>
         </div>
-        <div class="text-box">
-            You get to work on exciting projects! What is cool about being a coder 
-            is that you have control over how an application or website or whatever you create works!
+        
+        <div class="section">
+            <p>My name is (ADD YOUR NAME HERE)</p>
         </div>
-        <div class="box">
-            <button class="btn">SUBMIT</button>
+        
+        <div class="section">
+            <p>People ask me all the time — why do you like coding? Isn't it really hard? Isn't the work boring? Do you still have a social life?</p>
         </div>
-    <!-- </div> -->
-</div>
+        
+        <div class="section">
+            <p>You get to work on exciting projects! What is cool about being a coder is that you have control over how an application or website or whatever you create works!</p>
+        </div>
+        
+        <div class="button-section">
+            <button>SUBMIT</button>
+        </div>
+    </div>
 </body>
 </html>
